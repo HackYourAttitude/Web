@@ -1,0 +1,24 @@
+body{
+    max-height: 100%;
+    max-width: 100%;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+#mainContainer
+{
+    position :relative;
+    width: 70%;
+    height: 70%;
+}
+
+#logo
+{
+    left: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+    max-width: 50%;
+    max-height: 50%;
+}

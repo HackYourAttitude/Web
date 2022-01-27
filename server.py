@@ -21,7 +21,7 @@ def shop():
 
 @app.route("/kontakt")
 def contactForm():
-    return render_template("MainPage.html")
+    return render_template("ContactForm.html")
 
 
 
