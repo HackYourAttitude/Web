@@ -1,3 +1,38 @@
 {% extends "Navbar.html" %}
-{% block link %} <link rel="stylesheet" src="/static/MainPage.css"> {% endblock %}
-{% block content %}{% endblock %}
+{% block link %}
+    <link rel="stylesheet" src="/static/MainPage.css">
+    <script src="../static/ContactFormJS.js"></script>
+
+
+
+{% endblock %}
+{% block content %}
+    <br>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="name">Imie</label>
+    <input type="text" id="name" name="name" placeholder="">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="">
+
+    <label for="country">Kategoria</label>
+    <select placeholder="Wybierz..." id="country" name="country">
+        <option value="Inne">Inne</option>
+      <option value="Renowacje">Renowacja</option>
+      <option value="ZakupProduktu">Zakup produktu</option>
+      <option value="OpcjeDostawy">Opcje Dostawy</option>
+
+
+    </select>
+
+    <label for="subject">Pytanie</label>
+    <textarea id="subject" name="subject"  placeholder="Wpisz swoje pytanie.." style="height:200px"></textarea>
+
+    <input type="submit" value="Wyślij">
+
+  </form>
+</div>
+
+{% endblock %}

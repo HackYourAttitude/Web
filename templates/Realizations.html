@@ -1,3 +1,49 @@
 {% extends "Navbar.html" %}
-{% block link %} <link rel="stylesheet" src="/static/MainPage.css"> {% endblock %}
-{% block content %}{% endblock %}
+{% block link %} <link rel="stylesheet" src="/static/MainPage.css">
+{% endblock %}
+{% block content %}
+    <br>
+
+<style>
+    .grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:1em;
+    grid-auto: minmax(150px,auto);
+}
+    .image{
+        background-position-x: center;
+        background-position-y: center;
+        grid-auto: minmax(100px,auto);
+        background-image: url("../static/3.jpg");
+        background-size:contain;
+        border-bottom-style: solid;
+        background-repeat: no-repeat;
+    }
+    </style>
+<div class="grid">
+
+<div style="background-image: url('../static/2.jpg')" class="image">
+
+</div>
+<div style="background-image: url('../static/4.jpg')" class="image">
+
+</div>
+<div style="background-image: url('../static/3.jpg')" class="image">
+
+</div>
+<div style="background-image: url('../static/2.jpg')" class="image">
+
+</div>
+<div style="background-image: url('../static/3.jpg')" class="image">
+
+</div>
+
+<div style="background-image: url('../static/4.jpg')" class="image">
+
+</div>
+
+</div>
+
+
+{% endblock %}
