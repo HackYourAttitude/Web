@@ -9,30 +9,28 @@
 {% block content %}
     <br>
 <div class="container">
-  <form action="action_page.php">
 
     <label for="name">Imie</label>
-    <input type="text" id="name" name="name" placeholder="">
+    <input type="text" id="name"  placeholder="">
 
     <label for="lname">Email</label>
-    <input type="text" id="lname" name="lastname" placeholder="">
+    <input type="text" id="email"  placeholder="">
 
     <label for="country">Kategoria</label>
-    <select placeholder="Wybierz..." id="country" name="country">
+    <select placeholder="Wybierz..." id="issue" name="issue">
         <option value="Inne">Inne</option>
       <option value="Renowacje">Renowacja</option>
       <option value="ZakupProduktu">Zakup produktu</option>
       <option value="OpcjeDostawy">Opcje Dostawy</option>
 
-
     </select>
 
     <label for="subject">Pytanie</label>
-    <textarea id="subject" name="subject"  placeholder="Wpisz swoje pytanie.." style="height:200px"></textarea>
+    <textarea id="question"  placeholder="Wpisz swoje pytanie.." style="height:200px"></textarea>
 
-    <input type="submit" value="Wyślij">
+    <input id="button" type="submit" value="Wyślij">
 
-  </form>
+
 </div>
 
 {% endblock %}
